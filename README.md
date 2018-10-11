@@ -3,7 +3,9 @@
 Developers: [Muchun Xu](https://github.com/April92) and [Alison Blaine](https://github.com/alblaine)
 
 ## Overview of the app
-This web app created by the shiny package in R is designed to visualize Twitter hashtags. It invites users to enter a Twitter hashtag and specify a number of tweets to harvest. From this tweet harvest, the app will generate a wordcloud, a frequency table showing top ten most frequent hashtags, and tweets regarding the most frequent hashtags from that tweet harvest based on a given keyword. This app can give us a general idea on how the keyword related to other topics.
+This web app was created for demonstration purposes to show students ways that you can use the R language for data harvesting and visualization. The app was created using the Shiny package for creating web applications in R. We created this app to exhibit at a data pop up event near our [Dataspace](https://www.lib.ncsu.edu/spaces/dataspace) to do outreach to students and help advertise upcoming R workshops.
+
+Users are invited to enter a Twitter hashtag and specify a number of tweets to harvest. From this tweet harvest, the app will generate a wordcloud, a frequency table showing top ten most frequent hashtags, and tweets regarding the most frequent hashtags from that tweet harvest based on a given keyword. This app can give a sense of what related topics people are tweeting about using a particular hashtag.
 
 ## Data Source
 The data used is the latest 7 days’ twitter information obtained from [Twitter’s public API](https://developer.twitter.com/en/docs/basics/getting-started). A table with 88 variables containing user id, tweet text, created time, hashtags included, media type, and other users’ info like follower count, friends count will be created by abstracting data randomly from Twitter’s database and the number of observations is determined by the app user.  This table is what we analyze hashtags based on. Given the sample size, then observations are collected randomly from Twitter’s database. Only hashtags and texts are used in this app.
