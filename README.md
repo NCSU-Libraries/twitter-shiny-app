@@ -1,6 +1,6 @@
 
 # Twitter Hashtags Shiny App
-Developers: Muchun Xu and Alison Blaine
+Developers: [Muchun Xu](https://github.com/April92) and [Alison Blaine](https://github.com/alblaine)
 
 ## Overview of the app
 This web app created by the shiny package in R is designed to visualize Twitter hashtags. It invites users to enter a Twitter hashtag and specify a number of tweets to harvest. From this tweet harvest, the app will generate a wordcloud, a frequency table showing top ten most frequent hashtags, and tweets regarding the most frequent hashtags from that tweet harvest based on a given keyword. This app can give us a general idea on how the keyword related to other topics.
@@ -12,18 +12,18 @@ The data used is the latest 7 days’ twitter information obtained from [Twitter
 
 1. Input the word that you are interested to explore and choose the sample size you want your outputs based on. The larger the sample size, the more info you can get from the outputs, of course, the running time will take longer.
 
-![](https://github.com/NCSU-Libraries/Twitter-Hashtags/blob/master/1.png)
+![](https://github.com/NCSU-Libraries/twitter-shiny-app/blob/master/1.png)
 
 2. The wordcould plot will be generated on the screen as below. By moving the mouse to the word on the plot, the count of this word based on the chosen sample size will be shown.
 
-![](https://github.com/NCSU-Libraries/Twitter-Hashtags/blob/master/2.png)
+![](https://github.com/NCSU-Libraries/twitter-shiny-app/blob/master/2.png)
 
 3. By clicking the Frequency Table tab button, you can see a frequency table showing the largest ten counts of hashtags in the sample.
 
-![](https://github.com/NCSU-Libraries/Twitter-Hashtags/blob/master/3.png)
+![](https://github.com/NCSU-Libraries/twitter-shiny-app/blob/master/3.png)
 
 4. The Tweets tab layer shows all tweet texts regarding the most frequent hashtag.
-![](https://github.com/NCSU-Libraries/Twitter-Hashtags/blob/master/4.png)
+![](https://github.com/NCSU-Libraries/twitter-shiny-app/blob/master/4.png)
 
 ## Technical details
 1. A [Twitter developer account](https://twitter.com/login?redirect_after_login=https%3A%2F%2Fdeveloper.twitter.com%2Fen%2Fapply%2Fuser) is needed to obtain Twitter data. Package ‘rtweet’ and ‘httpuv’ will assist us to get data from Twitter by R.
