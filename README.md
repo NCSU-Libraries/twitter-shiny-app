@@ -9,26 +9,31 @@ This web app created by the shiny package in R is designed to visualize Twitter 
 The data used is the latest 7 days’ twitter information obtained from [Twitter’s public API](https://developer.twitter.com/en/docs/basics/getting-started). A table with 88 variables containing user id, tweet text, created time, hashtags included, media type, and other users’ info like follower count, friends count will be created by abstracting data randomly from Twitter’s database and the number of observations is determined by the app user.  This table is what we analyze hashtags based on. Given the sample size, then observations are collected randomly from Twitter’s database. Only hashtags and texts are used in this app.
 
 ## Instructions
-It is quite easy to use this app:
+
 1. Input the word that you are interested to explore and choose the sample size you want your outputs based on. The larger the sample size, the more info you can get from the outputs, of course, the running time will take longer.
 
 ![](https://github.com/April92/Twitter-Hashtags/blob/master/1.png)
+
 2. The wordcould plot will be generated on the screen as below. By moving the mouse to the word on the plot, the count of this word based on the chosen sample size will be shown.
 
 ![](https://github.com/April92/Twitter-Hashtags/blob/master/2.png)
 
-4. By clicking the Frequency Table tab button, you can see a frequency table showing the largest ten counts of hashtags in the sample.
+3. By clicking the Frequency Table tab button, you can see a frequency table showing the largest ten counts of hashtags in the sample.
 
 ![](https://github.com/April92/Twitter-Hashtags/blob/master/3.png)
 
-5. The Tweets tab layer shows all tweet texts regarding the most frequent hashtag.
+4. The Tweets tab layer shows all tweet texts regarding the most frequent hashtag.
 ![](https://github.com/April92/Twitter-Hashtags/blob/master/4.png)
 
 ## Technical details
 1. A [Twitter developer account](https://twitter.com/login?redirect_after_login=https%3A%2F%2Fdeveloper.twitter.com%2Fen%2Fapply%2Fuser) is needed to obtain Twitter data. Package ‘rtweet’ and ‘httpuv’ will assist us to get data from Twitter by R.
+
 2. The ['shiny'](https://shiny.rstudio.com/package) in R helps create the web app. It provides the framework to build the input and output panels that form the web app. We just need to follow its rules and design our own app by setting the input data and output formats.
+
 3. Functions in the package ['wordclouds2'](https://cran.r-project.org/web/packages/wordcloud2/vignettes/wordcloud.html) assisted by the package 'slam' can generate the wordcloud plot on a given frequency table.
+
 4. The frequency table and tweets table from the app outputs are created by some data manipulations.
+
 5. Some other packages are applied as well. The filter function in ['dplyr'](https://www.rdocumentation.org/packages/dplyr/versions/0.7.6) is used to create subtables, package ['rebus'](https://www.rdocumentation.org/packages/rebus/versions/0.0-4) is required for building regular expression to filter data and package ['stringr'](https://www.rdocumentation.org/packages/stringr/versions/1.1.0) is used for string detecting. They are quite useful for data manipulations. Package ['DT'](https://www.rdocumentation.org/packages/DT/versions/0.4) provides an R interface to the JavaScript library DataTable, and can create interactive table that can be displayed on HTML pages.
 
 ## R script
