@@ -1,5 +1,6 @@
 
 # Twitter Hashtags Shiny App
+Developers: Muchun Xu and Alison Blaine
 
 ## Overview of the app
 This web app created by the shiny package in R is designed to visualize Twitter hashtags. It invites users to enter a Twitter hashtag and specify a number of tweets to harvest. From this tweet harvest, the app will generate a wordcloud, a frequency table showing top ten most frequent hashtags, and tweets regarding the most frequent hashtags from that tweet harvest based on a given keyword. This app can give us a general idea on how the keyword related to other topics.
